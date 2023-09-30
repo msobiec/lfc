@@ -36,7 +36,7 @@ def add_record_to_db(people_count):
     cursor = conn.cursor()
     sql_cmd = '''INSERT INTO counter_data 
         (time, count) VALUES (%s, %s)'''
-    now_time = datetime.now(tz=pytz.timezone('Europe/Berlin'))
+    now_time = datetime.now(tz=pytz.timezone('Europe/London'))
     cursor.execute(sql_cmd, (now_time, people_count))
     conn.commit()
     cursor.close()
