@@ -5,6 +5,8 @@ ENV PGHOST $PGHOST
 ENV PGPASSWORD $PGPASSWORD
 ENV PGPORT $PGPORT
 ENV PGUSER $PGUSER
+ENV URL $URL
+ENV PLACENAME $PLACENAME
 
 RUN apt-get update
 RUN apt-get -y upgrade python3 python3-pip postgresql
